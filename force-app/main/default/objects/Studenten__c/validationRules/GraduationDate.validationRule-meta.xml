@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>GraduationDate</fullName>
+    <active>true</active>
+    <errorConditionFormula>Graduation_Date__c &gt;  TODAY() || 
+ Graduation_Date__c &lt; Enrollment_Date__c</errorConditionFormula>
+    <errorDisplayField>Graduation_Date__c</errorDisplayField>
+    <errorMessage>Graduation Date gelecek tarih ve ya Enrollment Date ten erken tarih olamaz</errorMessage>
+</ValidationRule>

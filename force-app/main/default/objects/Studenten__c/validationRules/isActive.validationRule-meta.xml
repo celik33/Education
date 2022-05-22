@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>isActive</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( isActive__c ,
+     OR( ISBLANK( Email__c ),
+         ISBLANK(  Phone__c ), 
+         ISBLANK( TEXT(Status__c ) ) 
+       )
+    )</errorConditionFormula>
+    <errorDisplayField>isActive__c</errorDisplayField>
+    <errorMessage>isActive e dikkat</errorMessage>
+</ValidationRule>

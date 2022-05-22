@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>salary</fullName>
+    <active>true</active>
+    <errorConditionFormula>OR(Salary__c &lt;3000  , 10000 &lt;Salary__c   )</errorConditionFormula>
+    <errorMessage>salary e dikkat</errorMessage>
+</ValidationRule>

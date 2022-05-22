@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Formulaa__c</fullName>
+    <externalId>false</externalId>
+    <formula>TIMENOW()
+
+
+
+
+
+/* IF( 
+        DATEVALUE(08:00&lt;TIMENOW()&lt;18:00)  ,
+          &quot;I Hate Salesforce&quot;,
+           &quot;I Love Salesforce&quot;
+)*/</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Formulaa</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Time</type>
+</CustomField>
